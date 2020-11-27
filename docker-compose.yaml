@@ -1,0 +1,10 @@
+version: "3.6"
+services: 
+  vaddress:
+    restart: always
+    container_name: vaddress
+    build: .
+    ports:
+      - "6000:6000"
+    volumes:
+      - .:/app
